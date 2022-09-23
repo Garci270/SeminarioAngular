@@ -1,0 +1,33 @@
+<div class="card mt-2">
+    <div class="card__image clash-card__image">
+        <img src="{{watch.image}}" alt="barbarian" />
+    </div>
+    <hr>
+    <div class="card__level card__level">
+        <h6>{{watch.color}}</h6>
+    </div>
+    <div class="card__unit-name">
+        <h4>{{watch.name}}</h4>
+    </div>
+    <div class="card__unit-description">
+        {{watch.detail}}
+    </div>
+    <div class="card__unit-stats card__unit-stats clearfix">
+        <div class="one-third">
+            <div class="stat" *ngIf="watch.clearance">Si<sup>10%</sup></div>
+            <div class="stat" *ngIf="!watch.clearance">No</div>
+            <div class="stat-value">Oferta</div>
+        </div>
+        <div class="one-third">
+            <div class="stat">{{watch.stock}}</div>
+            <div class="stat-value">Disponibles</div>
+        </div>
+        <div class="one-third no-border">
+            <div class="stat">{{watch.price |currency: '' : 'symbol' : '1.0-0' }}</div>
+            <div class="stat-value">PRECIO</div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-block btn-card">Agregar al carrito</button>
+    </div>
+</div>

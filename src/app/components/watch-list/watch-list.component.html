@@ -1,1 +1,10 @@
-<p>watch-list works!</p>
+<div class="container">
+    <h3 class="">RELOJES</h3>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-4" *ngFor="let watch of watchs">
+                <app-watch-card [watch]="watch" *ngIf="watch"></app-watch-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 export interface Watch{
     name:string,
-    type:string,
+    color:string,
     detail:string,
     price:number,
     stock:number,

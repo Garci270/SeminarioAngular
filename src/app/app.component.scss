@@ -1,0 +1,27 @@
+.imgCarousel{
+    object-fit: fill;
+    width: 100%;
+}
+
+.carousel-inner{
+    border-radius: 2%;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logIn{
+    margin-right: auto;
+}

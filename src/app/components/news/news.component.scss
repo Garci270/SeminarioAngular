@@ -1,0 +1,40 @@
+.contain{
+    background-color: #03181C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 18rem;
+    width: 18rem;
+}
+
+.img-user{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-card{
+    text-align: left;
+}
+
+.date-card{
+    text-align: end;
+}
+
+.user-card{
+    display: flex;
+    flex-direction: column-reverse;
+}

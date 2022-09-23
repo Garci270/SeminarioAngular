@@ -1,0 +1,33 @@
+<div class="contain">
+    <div class="container">
+        <div class="text-center m-5">
+            <h3 class="text-white">Lo que dicen de nosotros miles de clientes convencidos</h3>
+            <p class="text-white">120.303 valoraciones a nivel mundial</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-4 content-card" *ngFor="let coment of coments">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-subtitle text-muted date-card">{{coment.date}}</h6>
+                        <h5 class="card-title text-card m-3">{{coment.title}}</h5>
+                        <p class="card-text text-card m-3"><i class="fa fa-quote-left" aria-hidden="true"></i> {{coment.coment}} <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                        <div class="text-center">
+                            <hr>
+                        </div>
+                        <div class="m-4">
+                            <div class="row">
+                                <div>
+                                    <img src="{{coment.image}}" alt="" class="img-user">
+                                </div>
+                                <div class="text-card user-card">
+                                    <h6 class="ml-2">{{coment.name}}</h6>
+                                    <small class="text-muted ml-2 small-card">{{coment.city}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
