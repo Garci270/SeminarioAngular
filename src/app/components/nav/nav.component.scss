@@ -1,0 +1,27 @@
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+}
+
+.itemRight{
+    text-align: right;
+}
+
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.cart{
+    margin: 10px;
+}
