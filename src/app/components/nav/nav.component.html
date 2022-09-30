@@ -16,14 +16,16 @@
             <a class="nav-link">Novedades</a>
           </li>
         </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item itemRight pointer">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item itemRight pointer mr-4">
             <a class="nav-link" (click)="openCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
     </nav>
-  </div>
-  <div class="cart">
-      <app-cart [cartClass]="cartClass"></app-cart>
+    <div class="col">
+        <div class="float-right">
+          <app-cart [cartClass]="cartClass"></app-cart>
+        </div>
+    </div>
   </div>
