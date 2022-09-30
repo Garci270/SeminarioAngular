@@ -35,6 +35,33 @@ export class WatchListComponent implements OnInit {
       image: 'https://content.rolex.com/dam/2021/upright-bba/m126711chnr-0002.png',
       clearance: false, 
     },
+    {
+      name: 'DATEJUST ',
+      color: 'Oro',
+      detail: 'El Reloj clasico de referencia',
+      price: 540000,
+      stock: 70,
+      image: 'https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126333-0021.png?impolicy=v6-upright&imwidth=270',
+      clearance: false, 
+    },
+    {
+      name: 'EXPLORER',
+      color: 'Oro y Plata',
+      detail: 'El Reloj cosmopolitano',
+      price: 30000,
+      stock: 88,
+      image: 'https://content.rolex.com/dam/2022/upright-bba/m124270-0001.png?impolicy=v6-upright',
+      clearance: false, 
+    },
+    {
+      name: 'OYSTER PERPETUAL',
+      color: 'Plata',
+      detail: 'La esencia del Oyster',
+      price: 30000,
+      stock: 88,
+      image: 'https://content.rolex.com/dam/2022/upright-bba-with-shadow/m124300-0001.png?imwidth=380',
+      clearance: false, 
+    },
   ]
   constructor() { }
 
