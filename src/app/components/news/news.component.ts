@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Coment } from '../watch-card/Coment';
+import { Coment } from './Coment';
 
 @Component({
   selector: 'app-news',
