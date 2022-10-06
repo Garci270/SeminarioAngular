@@ -1,4 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable, observable } from 'rxjs';
+import { WatchCartService } from 'src/app/watch-cart.service';
+import { Watch } from '../watch-list/Watch';
+
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +11,20 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
   @Input() cartClass: String;
-  constructor() { }
+  
+  cart: Observable<Watch[]>;
+
+
+  constructor(private WatchCart: WatchCartService) {
+     this.cart = WatchCart.cart.asObservable();
+   }
 
   ngOnInit(): void {
   }
+
+  removeFromCart(i:Watch){
+    this.WatchCart.removeFromCart(i);
+  }
+
 
 }

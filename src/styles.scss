@@ -2,6 +2,10 @@ html {
     --scrollbarBG: #ffffff;
     --thumbBG: #D4AF37;
   }
+  body{
+    padding-top: 100px;
+
+  }
   body::-webkit-scrollbar {
     width: 11px;
   }

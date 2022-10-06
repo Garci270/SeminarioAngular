@@ -9,6 +9,8 @@ import { WatchCardComponent } from './components/watch-card/watch-card.component
 import { NewsComponent } from './components/news/news.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { NavComponent } from './components/nav/nav.component';
     NewsComponent,
     FooterComponent,
     NavComponent,
+    AboutComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

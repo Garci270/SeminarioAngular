@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,ViewChild} from '@angular/core';
+import { WatchCartService } from 'src/app/watch-cart.service';
+import { CartComponent } from '../cart/cart.component';
 import { Watch } from '../watch-list/Watch';
 
 @Component({
@@ -8,10 +10,17 @@ import { Watch } from '../watch-list/Watch';
 })
 export class WatchCardComponent implements OnInit {
   @Input() watch: Watch;
-  constructor() { 
+  constructor(private WatchCart: WatchCartService) { 
   }
 
   ngOnInit(): void {
+  }
+
+  addToCart(){
+    this.watch.quantity++;
+    this.WatchCart.addToCart(this.watch);
+    this.watch.quantity = 0;
+    this.watch.stock = this.watch.stock-1;
   }
 
 }

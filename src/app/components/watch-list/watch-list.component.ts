@@ -16,6 +16,7 @@ export class WatchListComponent implements OnInit {
       stock: 100,
       image: 'https://content.rolex.com/dam/2022/upright-bba-with-shadow/m268655-0019.png?impolicy=v6-upright&imwidth=270',
       clearance: true, 
+      quantity:0
     },
     {
       name: 'AIR-KINK',
@@ -25,6 +26,7 @@ export class WatchListComponent implements OnInit {
       stock: 20,
       image: 'https://content.rolex.com/dam/2022/upright-bba/m126900-0001.png?impolicy=v6-upright',
       clearance: true, 
+      quantity:0
     },
     {
       name: 'GMT-MASTER',
@@ -34,6 +36,7 @@ export class WatchListComponent implements OnInit {
       stock: 88,
       image: 'https://content.rolex.com/dam/2021/upright-bba/m126711chnr-0002.png',
       clearance: false, 
+      quantity:0
     },
     {
       name: 'DATEJUST ',
@@ -43,6 +46,7 @@ export class WatchListComponent implements OnInit {
       stock: 70,
       image: 'https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126333-0021.png?impolicy=v6-upright&imwidth=270',
       clearance: false, 
+      quantity:0
     },
     {
       name: 'EXPLORER',
@@ -52,6 +56,7 @@ export class WatchListComponent implements OnInit {
       stock: 88,
       image: 'https://content.rolex.com/dam/2022/upright-bba/m124270-0001.png?impolicy=v6-upright',
       clearance: false, 
+      quantity:0
     },
     {
       name: 'OYSTER PERPETUAL',
@@ -61,6 +66,7 @@ export class WatchListComponent implements OnInit {
       stock: 88,
       image: 'https://content.rolex.com/dam/2022/upright-bba-with-shadow/m124300-0001.png?imwidth=380',
       clearance: false, 
+      quantity:0
     },
   ]
   constructor() { }

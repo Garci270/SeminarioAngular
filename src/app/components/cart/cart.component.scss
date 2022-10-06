@@ -1,6 +1,6 @@
 
 .shopping-cart {
-    margin: 20px 0;
+    z-index: 999;
     float: right;
     background: white;
     width: 320px;
@@ -8,10 +8,9 @@
     border-radius: 3px;
     padding: 20px;
     border: 1px solid #c5c5c5;
-    
-    
+    margin-left: 20px;    
     .shopping-cart-header {
-      border-bottom: 1px solid #E8E8E8;
+      border-bottom: 1px solid #c5c5c5;
       padding-bottom: 15px;
       
       .shopping-cart-total {
@@ -20,7 +19,7 @@
     }
     
     .shopping-cart-items {
-      
+      list-style: none;
       padding-top: 20px;
   
         li {
@@ -28,6 +27,7 @@
         }
   
       img {
+        width: 100px;
         float: left;
         margin-right: 12px;
       }
@@ -39,12 +39,12 @@
       }
       
       .item-price {
-        color: blue;
+        color: #D4AF37;
         margin-right: 8px;
       }
       
       .item-quantity {
-        color: wheat;
+        color: rgb(0, 0, 0);
       }
     }
      
@@ -59,7 +59,7 @@
       width: 0;
       position: absolute;
       pointer-events: none;
-      border-bottom-color: white;
+      border-bottom-color: #c5c5c5;
       border-width: 8px;
       margin-left: -8px;
   }
@@ -72,7 +72,7 @@
   }
   
   .button {
-    background: blue;
+    background: #D4AF37;
     color:white;
     text-align: center;
     padding: 12px;
@@ -83,12 +83,12 @@
     margin: 25px 0 15px 0;
     
     &:hover {
-      background: lighten(blue, 3%);
+      background: lighten(#D4AF37, 3%);
     }
   }
 
   .badge {
-    background-color: #6394F8;
+    background-color: #D4AF37;
     border-radius: 10px;
     color: white;
     display: inline-block;
@@ -108,4 +108,16 @@
 
 .shopping-cartNone{
     display: none;
+}
+
+.mpointer{
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width:1900px){
+  .shopping-cart {
+    margin-left: 140px;    
+
+  }
 }

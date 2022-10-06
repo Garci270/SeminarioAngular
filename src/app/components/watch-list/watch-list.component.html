@@ -3,7 +3,9 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-4" *ngFor="let watch of watchs">
-                <app-watch-card [watch]="watch" *ngIf="watch"></app-watch-card>
+                <div class="m-3">
+                    <app-watch-card [watch]="watch" *ngIf="watch"></app-watch-card>
+                </div>
             </div>
         </div>
     </div>
