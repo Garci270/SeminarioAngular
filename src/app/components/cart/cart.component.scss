@@ -1,9 +1,27 @@
 
+ .shopping-cart::-webkit-scrollbar {
+  width: 11px;
+}
+.shopping-cart {
+  scrollbar-width: thin;
+  scrollbar-color: #D4AF37 #ffffff;
+}
+.shopping-cart::-webkit-scrollbar-track {
+  background: #ffffff;;
+}
+.shopping-cart::-webkit-scrollbar-thumb {
+  background-color: #D4AF37 ;
+  border-radius: 6px;
+  border: 3px solid #ffffff;;
+}
+
 .shopping-cart {
     z-index: 999;
     float: right;
     background: white;
     width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
     position: fixed;
     border-radius: 3px;
     padding: 20px;
@@ -23,6 +41,7 @@
       padding-top: 20px;
   
         li {
+          margin-left: -20px;
           margin-bottom: 18px;
         }
   
