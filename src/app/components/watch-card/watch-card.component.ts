@@ -1,6 +1,5 @@
 import { Component, Input, OnInit ,ViewChild} from '@angular/core';
-import { WatchCartService } from 'src/app/watch-cart.service';
-import { CartComponent } from '../cart/cart.component';
+import { WatchCartService } from '../../watch-cart.service';
 import { Watch } from '../watch-list/Watch';
 
 @Component({

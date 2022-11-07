@@ -14,7 +14,7 @@ export class WatchListComponent implements OnInit {
       detail: 'El Reloj de los oceanos abiertos',
       price: 150000,
       stock: 100,
-      image: '../assets/images/reloj1.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj1.webp',
       clearance: true, 
       quantity:0
     },
@@ -24,7 +24,7 @@ export class WatchListComponent implements OnInit {
       detail: 'El Reloj de hogar',
       price: 100000,
       stock: 20,
-      image: '../assets/images/reloj2.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj2.webp',
       clearance: true, 
       quantity:0
     },
@@ -34,7 +34,7 @@ export class WatchListComponent implements OnInit {
       detail: 'El Reloj cosmopolitano',
       price: 30000,
       stock: 88,
-      image: '../assets/images/reloj3.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj3.webp',
       clearance: false, 
       quantity:0
     },
@@ -44,7 +44,7 @@ export class WatchListComponent implements OnInit {
       detail: 'El Reloj clasico de referencia',
       price: 540000,
       stock: 70,
-      image: '../assets/images/reloj4.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj4.webp',
       clearance: false, 
       quantity:0
     },
@@ -54,7 +54,7 @@ export class WatchListComponent implements OnInit {
       detail: 'El Reloj cosmopolitano',
       price: 30000,
       stock: 88,
-      image: '../assets/images/reloj5.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj5.webp',
       clearance: false, 
       quantity:0
     },
@@ -64,7 +64,7 @@ export class WatchListComponent implements OnInit {
       detail: 'La esencia del Oyster',
       price: 30000,
       stock: 88,
-      image: '../assets/images/reloj6.webp',
+      image: 'https://raw.githubusercontent.com/Garci270/SeminarioAngular/main/src/assets/images/reloj6.webp',
       clearance: false, 
       quantity:0
     },

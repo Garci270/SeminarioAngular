@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable, observable } from 'rxjs';
-import { WatchCartService } from 'src/app/watch-cart.service';
+import { WatchCartService } from '../../watch-cart.service';
 import { Watch } from '../watch-list/Watch';
 
 
