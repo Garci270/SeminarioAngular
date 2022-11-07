@@ -16,7 +16,11 @@ const routes: Routes = [
   {
     path:'about',
     component:AboutComponent
-  }
+  },
+  {
+    path: '**', // Navigate to Home Page if not found any page
+    redirectTo:  'home',
+  },
 ];
 
 @NgModule({
