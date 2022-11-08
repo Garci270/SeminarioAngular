@@ -14,9 +14,6 @@ export class WatchCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.WatchCart.cart.subscribe(e=>{
-      console.log(e);
-    });
   }
 
   addToCart(){

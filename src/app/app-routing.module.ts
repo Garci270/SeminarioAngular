@@ -18,7 +18,7 @@ const routes: Routes = [
     component:AboutComponent
   },
   {
-    path: '**', // Navigate to Home Page if not found any page
+    path: '**', 
     redirectTo:  'home',
   },
 ];

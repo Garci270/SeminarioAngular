@@ -20,7 +20,6 @@ export class WatchCartService {
       }else{
         item.quantity += watch.quantity;
       }
-      console.log(this._cart);
       this.cart.next(this._cart);
   }
 
