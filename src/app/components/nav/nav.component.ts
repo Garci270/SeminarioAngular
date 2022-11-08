@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,10 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   cartClass:String = "shopping-cartNone";
-  constructor() { }
+  homeActive: boolean = true;
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
+
+  changeActive(i:boolean){
+    this.homeActive = i;
+  }
+
+
   
   openCart(){
     if(this.cartClass == "shopping-cartNone"){
