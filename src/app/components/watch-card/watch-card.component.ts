@@ -10,16 +10,22 @@ import { Watch } from '../watch-list/Watch';
 export class WatchCardComponent implements OnInit {
   @Input() watch: Watch;
   constructor(private WatchCart: WatchCartService) { 
+    
   }
 
   ngOnInit(): void {
+    this.WatchCart.cart.subscribe(e=>{
+      console.log(e);
+    });
   }
 
   addToCart(){
-    this.watch.quantity++;
-    this.WatchCart.addToCart(this.watch);
-    this.watch.quantity = 0;
-    this.watch.stock = this.watch.stock-1;
+    if(this.watch.stock > 0){
+      this.watch.quantity++;
+      this.WatchCart.addToCart(this.watch);
+      this.watch.quantity = 0;
+      this.watch.stock = this.watch.stock-1;
+    }
   }
 
 }

@@ -22,7 +22,7 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removeFromCart(i:Watch){
+  removeFromCart(i:number){
     this.WatchCart.removeFromCart(i);
   }
 
