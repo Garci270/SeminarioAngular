@@ -22,6 +22,10 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  vaciarCarrito(){
+    this.WatchCart.cleanCart();
+  }
+
   removeFromCart(i:number){
     this.WatchCart.removeFromCart(i);
   }

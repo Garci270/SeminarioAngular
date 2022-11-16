@@ -1,3 +1,4 @@
+import { isNgTemplate } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Watch } from './components/watch-list/Watch';
@@ -35,6 +36,20 @@ export class WatchCartService {
         this._cart.splice(i,1)
       }
     }
+    this.cart.next(this._cart);
+  }
+
+
+  cleanCart(){
+    this._cart.forEach(element => {
+      this.productService.watchs.forEach(eleW =>{
+        console.log("paso");
+        if(element.name == eleW.name && eleW.color == element.color){
+          eleW.stock += element.quantity;
+        }
+      })
+    });
+    this._cart = [];
     this.cart.next(this._cart);
   }
 
